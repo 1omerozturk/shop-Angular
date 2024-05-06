@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "description": "This is a 17 Inc Laptop.",
+      "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": 353,
+      "CategoryId": 3
+    },
+    {
+      "id": 2,
+      "name": "Phone",
+      "description": "This is a Samsung Galaxy M503F Mobile Phone.",
+      "price": 120,
+      "CategoryId": 2,
+      "imageUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 3,
+      "name": "Television",
+      "description": "This is a 4K Television",
+      "price": 78,
+      "CategoryId": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 4,
+      "name": "Speaker",
+      "description": "This is a Speaker with  8 Ohm Impedance",
+      "price": 22,
+      "CategoryId": 4,
+      "imageUrl": "https://images.unsplash.com/photo-1531104985437-603d6490e6d4?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Electronics" },
+    { "id": 4, "name": "Phone" },
+    { "id": 2, "name": "TV" },
+    { "id": 5, "name": "Game" },
+    { "id": 3, "name": "Furniture" }
+  ]
+}
