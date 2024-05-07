@@ -7,6 +7,8 @@ import { AlertifyService } from '../services/alertify.service';
 import { ProductService } from '../services/product.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CategoryComponent } from '../category/category.component';
+import { LoginGuard } from '../login/login.guard';
+import { AccountService } from '../services/account.service';
 
 @Component({
   selector: 'app-product',
@@ -14,7 +16,7 @@ import { CategoryComponent } from '../category/category.component';
   templateUrl: './product.component.html',
   styleUrl: './product.component.css',
   imports: [CommonModule,RouterLink,CategoryComponent, ProductFilterPipe,FormsModule],
-  providers:[ProductService]
+  providers:[ProductService,AccountService,LoginGuard]
 })
 export class ProductComponent implements OnInit {
 filterText=""
@@ -34,6 +36,6 @@ filterText=""
   }
 
   addToCart(product: Product): void {
-    this.alertifyService.success(product);
+    this.alertifyService.dialog(product);
   }
 }

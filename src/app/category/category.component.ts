@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoryService } from '../services/category.service';
 import { Router, RouterLink } from '@angular/router';
+import { AccountService } from '../services/account.service';
+import { LoginGuard } from '../login/login.guard';
 
 @Component({
   selector: 'app-category',
@@ -11,7 +13,7 @@ import { Router, RouterLink } from '@angular/router';
   imports: [CommonModule, HttpClientModule,RouterLink],
   templateUrl: './category.component.html',
   styleUrl: './category.component.css',
-  providers:[CategoryService]
+  providers:[CategoryService,AccountService,LoginGuard]
 })
 export class CategoryComponent implements OnInit {
   title = 'Category List';

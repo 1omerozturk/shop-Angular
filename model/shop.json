@@ -1,43 +1,90 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Laptop",
       "description": "This is a 17 Inc Laptop.",
       "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "price": 353,
-      "CategoryId": 3
+      "categoryId": 3
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Phone",
       "description": "This is a Samsung Galaxy M503F Mobile Phone.",
       "price": 120,
-      "CategoryId": 2,
+      "categoryId": 2,
       "imageUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Television",
       "description": "This is a 4K Television",
       "price": 78,
-      "CategoryId": 4,
+      "categoryId": 4,
       "imageUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Speaker",
       "description": "This is a Speaker with  8 Ohm Impedance",
       "price": 22,
-      "CategoryId": 4,
+      "categoryId": 4,
       "imageUrl": "https://images.unsplash.com/photo-1531104985437-603d6490e6d4?q=80&w=2039&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "d16e",
+      "name": "Iphone 15 Pro Max",
+      "description": "product to Apple Phone",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/141049-1_large.jpg",
+      "price": 30000,
+      "categoryId": 4
+    },
+    {
+      "id": "dbba",
+      "name": "Honor Tablet",
+      "description": "10 Inc Android Tablet ",
+      "imageUrl": "https://cdn.vatanbilgisayar.com/Upload/PRODUCT/lenovo/thumb/142643-1_large.jpg",
+      "price": 10000,
+      "categoryId": 5
+    },
+    {
+      "id": "221a",
+      "name": "MSI VIGOR Laptop",
+      "description": "Laptop is strongest in the world",
+      "imageUrl": "data:image/jpeg;base64,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",
+      "price": 60000,
+      "categoryId": "category.id"
+    },
+    {
+      "id": "b8e8",
+      "name": "Airfryer",
+      "description": "Airfry for all kitchen ",
+      "imageUrl": "https://m.media-amazon.com/images/I/61JAoiaoJFL._AC_UF1000,1000_QL80_.jpg",
+      "price": "12000",
+      "categoryId": "1"
     }
   ],
   "categories": [
-    { "id": 1, "name": "Electronics" },
-    { "id": 4, "name": "Phone" },
-    { "id": 2, "name": "TV" },
-    { "id": 5, "name": "Game" },
-    { "id": 3, "name": "Furniture" }
+    {
+      "id": "1",
+      "name": "Electronics"
+    },
+    {
+      "id": "4",
+      "name": "Phone"
+    },
+    {
+      "id": "2",
+      "name": "TV"
+    },
+    {
+      "id": "5",
+      "name": "Game"
+    },
+    {
+      "id": "3",
+      "name": "Furniture"
+    }
   ]
 }

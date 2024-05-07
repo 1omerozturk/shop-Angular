@@ -1,0 +1,99 @@
+<h1 class="text-center w-2/3 mx-auto rounded-xl my-3">Add New Product</h1>
+
+<div class="text-center w-3/4 mx-auto p-16 py-20 bg-slate-500 rounded-ss-full rounded-e-full rounded-tr-2xl ">
+  <form #productAddForm="ngForm" (ngSubmit)="add(productAddForm)">
+    <div class="form-group my-3">
+      <input
+        class="form-control bg-gradient-to-r from-blue-400 text-black"
+        id="name"
+        name="name"
+        type="text"
+        placeholder="Product Name"
+        #name="ngModel"
+        [(ngModel)]="model.name"
+        required
+      />
+      <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">
+        Product name is required !
+      </div>
+    </div>
+    <div class="form-group my-3">
+      <input
+        class="form-control bg-gradient-to-r from-blue-400 text-black"
+        id="description"
+        name="description"
+        type="text"
+        placeholder="Product Description"
+        #description="ngModel"
+        [(ngModel)]="model.description"
+        required
+      />
+      <div
+        *ngIf="description.invalid && description.dirty"
+        class="alert alert-danger"
+      >
+        Description is required !
+      </div>
+    </div>
+    <div class="form-group my-3">
+      <input
+        class="form-control bg-gradient-to-r from-blue-400 text-black"
+        id="imageUrl"
+        name="imageUrl"
+        type="text"
+        placeholder="Product Image Url"
+        #imageUrl="ngModel"
+        [(ngModel)]="model.imageUrl"
+        required
+      />
+      <div
+        *ngIf="imageUrl.invalid && imageUrl.dirty"
+        class="alert alert-danger"
+      >
+        Product Image is required !
+      </div>
+    </div>
+    <div class="form-group my-3">
+      <input
+        class="form-control bg-gradient-to-r from-blue-400 text-black"
+        id="price"
+        name="price"
+        type="number"
+        placeholder="Product Price"
+        #price="ngModel"
+        [(ngModel)]="model.price"
+        required
+      />
+      <div *ngIf="price.invalid && price.dirty" class="alert alert-danger">
+        Product Price is required !
+      </div>
+    </div>
+    <div class="form-group">
+      <select
+        class="form-control bg-gradient-to-r from-blue-400 text-black"
+        #categoryId="ngModel"
+        [(ngModel)]="model.categoryId"
+        id="categoryId"
+        name="categoryId"
+        required
+      >
+        <option *ngFor="let category of categories" value="category.id" >
+          {{ category.name }}
+        </option>
+      </select>
+      <div
+        *ngIf="categoryId.invalid && categoryId.touched"
+        class="alert alert-danger"
+      ></div>
+    </div>
+
+    <div class="form-group my-3">
+      <div class="col-sm-10 col-sm-offset-2">
+        <button type="submit" class="btn btn-outline-dark bg-gradient-to-r from-green-400 to-blue-500 hover:from-gray-500 hover:to-zinc-800"
+         [disabled]="productAddForm.invalid" >
+            Product Add
+          </button>
+    </div>
+    </div>
+  </form>
+</div>

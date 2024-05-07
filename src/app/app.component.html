@@ -66,65 +66,17 @@
     </li>
   </ul>
 </div>
-<header
-  class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow"
-  data-bs-theme="dark"
->
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#"
-    >Company name</a
-  >
-
-  <ul class="navbar-nav flex-row d-md-none">
-    <li class="nav-item text-nowrap">
-      <button
-        class="nav-link px-3 text-white"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSearch"
-        aria-controls="navbarSearch"
-        aria-expanded="false"
-        aria-label="Toggle search"
-      >
-        <svg class="bi"><use xlink:href="#search" /></svg>
-      </button>
-    </li>
-    <li class="nav-item text-nowrap">
-      <button
-        class="nav-link px-3 text-white"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#sidebarMenu"
-        aria-controls="sidebarMenu"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <svg class="bi"><use xlink:href="#list" /></svg>
-      </button>
-    </li>
-  </ul>
-</header>
-
 <div class="container-fluid">
   <div class="row">
     <div
-      class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary"
+      class="sidebar fixed h-min border-r-4  col-md-3 col-lg-2 p-0 bg-gradient-to-b from-gray-500 via-white to-gray-400 opacity-90"
     >
       <div
-        class="offcanvas-md offcanvas-end bg-body-tertiary"
+        class="offcanvas-md offcanvas-end bg-transparent"
         tabindex="-1"
         id="sidebarMenu"
         aria-labelledby="sidebarMenuLabel"
       >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="sidebarMenuLabel">Company name</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            data-bs-target="#sidebarMenu"
-            aria-label="Close"
-          ></button>
-        </div>
         <div
           class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto"
         >
@@ -135,32 +87,33 @@
                 aria-current="page"
                 routerLink=""
               >
-              <i class="fa fa-home" aria-hidden="true"></i>
+              <i class="fa fa-lg  fa-home" aria-hidden="true"></i>
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-               <i class="fa fa-random" aria-hidden="true"></i>
+              
+              <a   routerLink="/products" class="nav-link d-flex align-items-center gap-2" href="#">
+               <i class="fa fa-lg  fa-random" aria-hidden="true"></i>
                 Products
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-               <i class="fa fa-list" aria-hidden="true"></i>
-                categories
+              <a  routerLink="/category" class="nav-link d-flex align-items-center gap-2" href="#">
+               <i class="fa fa-list fa-lg " aria-hidden="true"></i>
+                Categories
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#people" /></svg>
-                Customers
+              <a routerLink="/product-add-1" class="nav-link d-flex align-items-center gap-2" >
+             <i class="fa fa-lg fa-plus-circle" aria-hidden="true"></i>
+                Add Product / Classic Form
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <svg class="bi"><use xlink:href="#graph-up" /></svg>
-                Reports
+              <a routerLink="/product-add-2" class="nav-link d-flex align-items-center gap-2" >
+                <i class="fa fa-lg fa-plus" aria-hidden="true"></i>
+                Add Product / Reactive Form
               </a>
             </li>
             <li class="nav-item">
@@ -211,14 +164,13 @@
           <ul class="nav flex-column mb-auto">
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center gap-2" href="#">
-                <i class="fa fa-adjust" aria-hidden="true"></i>
-                Settings
+                <i class="fa fa-cog fa-spin fa-2x"></i>Settings
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" href="#">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                Sign out
+              <a class="nav-link d-flex align-items-center gap-2" routerLink="/login">
+                  <i class="fa fa-2x fa-sign-in" aria-hidden="true"></i>
+                Sign In
               </a>
             </li>
           </ul>

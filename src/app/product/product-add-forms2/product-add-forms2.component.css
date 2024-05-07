@@ -1,0 +1,7 @@
+.form-group input,
+.form-group select{
+    background: linear-gradient(to right, rgb(255, 255, 149), rgb(235, 181, 80));
+}
+.form-group{
+    margin-top: 1rem;
+}

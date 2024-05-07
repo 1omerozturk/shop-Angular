@@ -10,7 +10,7 @@ export class AlertifyService {
 
   constructor() { }
 
-  success(product:Product){
+  dialog(product:Product){
     alertify
       .confirm()
       .setting({
@@ -24,5 +24,9 @@ export class AlertifyService {
         },
       })
       .show();
+  }
+  successToAddProduct(product:Product){
+    alertify.success("Add to product " + product.name);
+
   }
 }

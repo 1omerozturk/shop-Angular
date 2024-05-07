@@ -5,6 +5,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './product/product.component';
+import { LoginGuard } from './login/login.guard';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { ProductComponent } from './product/product.component';
     ProductComponent,
     CommonModule,
   ],
+  providers:[LoginGuard],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
