@@ -1,21 +1,24 @@
 <main class="form-signin w-100 m-auto rounded-3xl my-2 bg-black bg-opacity-80">
-  <form>
+  <form #loginForm="ngForm" (ngSubmit)="login(this.loginForm)">
     <h1 class="h3 text-center mb-3 fw-normal text-white">Sign In</h1>
 
     <div class="form-floating">
       <input
+      #userName="ngModel" [(ngModel)]="model.userName"
         type="text"
         class="form-control"
-        id="floatingInput"
+        id="Username"
+        name="Username"
         placeholder="Username"
       />
-      <label for="floatingInput">Email address</label>
+      <label for="floatingInput">Username</label>
     </div>
     <div class="form-floating my-2">
-      <input
-        type="password"
+      <input  #password="ngModel" [(ngModel)]="model.password"
+        type="text"
         class="form-control"
-        id="floatingPassword"
+        id="password"
+        name="password"
         placeholder="Password"
       />
       <label for="floatingPassword">Password</label>
@@ -27,10 +30,9 @@
     </button>
     <div class="text-center">
       <a
-        name=""
-        id=""
+        name="routeSignUp"
+        id="routeSignUp"
         class="btn btn-light btn-sm w-1/2"
-        href="#"
         role="button"
       >
         Sign Up</a

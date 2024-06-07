@@ -168,11 +168,18 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center gap-2" routerLink="/login">
+              <a *ngIf="isLoggedIn()==false" class="nav-link d-flex align-items-center gap-2" routerLink="/login">
                   <i class="fa fa-2x fa-sign-in" aria-hidden="true"></i>
                 Sign In
               </a>
             </li>
+            <li class="nav-item">
+              <a *ngIf="isLoggedIn()==true" class="nav-link d-flex align-items-center gap-2" (click)="logOut()">
+                <i class="fa fa-sign-out fa-2x" aria-hidden="true"></i>
+                Sign Out
+              </a>
+            </li>
+           
           </ul>
         </div>
       </div>
